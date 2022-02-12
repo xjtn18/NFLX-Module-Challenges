@@ -8,7 +8,7 @@ public class ValidNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Give a number between " + low + " and " + high + " inclusive: ");
         int input = scanner.nextInt();
-        while (input < 1 || input > 10){
+        while (input < low || input > high){
             System.out.print("You must enter a number between 1 and 10. Please try again: ");
             input = scanner.nextInt();
         }
